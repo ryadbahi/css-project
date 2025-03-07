@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Div du contenu de la page -->
+    <div class="content">
+        <div>
+            <iframe src="https://www.youtube.com/embed/UlkFcgTxbzs?si=_azMWSElkWgRg0w7" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+        <!-- Home Section -->
+        <section id="home">
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <div>
+                <p>
+                    Ici, pas de code ennuyeux ni de pages fades ! Juste un développeur passionné qui jongle entre <strong>Angular, Node.js et un bon café bien serré</strong>. <br>
+                    D’abord plongé dans l’univers du tourisme, puis expert en assurance, <br>
+                    j’ai appris à naviguer entre l’humain et la technique.
+                </p>
+                <p>
+                    Aujourd’hui, je mets cette polyvalence au service du <strong>développement web :</strong> créer des expériences fluides, optimiser des process, 
+                    et rendre les choses plus simples (Ou autrement compliqué ?).
+                </p>
+                <p>
+                    Explore, clique, découvre – et si quelque chose te plaît, on en parle ?
+                </p>
+            </div>
+        </section>
+        
+        <!-- Work Section -->
+        <section id="work">
+            <h2>Mes Projets</h2>
+            <table border="1">
+                <tr>
+                    <th> 
+                        La Stack : 
+                        <img src="assets/angular_icon_gradient.gif" alt="Angular Icon">
+                        <img src="assets/nodejsicn.webp" alt="Node.js Icon">
+                        <img src="assets/expressjsicn.png" alt="Express.js Icon">
+                        <img src="assets/mysqlicn.webp" alt="MySQL Icon">
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Ce projet m’a servi de terrain d’apprentissage pour le <strong>développement frontend et backend</strong>, 
+                        en évoluant au fil des défis rencontrés dans mon travail d’assureur. Il repose sur des concepts essentiels tels que le <strong>CRUD</strong>, 
+                        l’optimisation des interfaces, la gestion du <strong>lazy loading</strong>, et bien d’autres bonnes pratiques de développement.<br><br>
+                        Grâce à ce projet, j’ai pu <strong>automatiser et simplifier mes tâches quotidiennes</strong>, 
+                        en transformant des processus manuels en solutions efficaces et intuitives. Chaque fonctionnalité a été pensée 
+                        pour <strong>répondre à des besoins réels</strong>, tout en consolidant mes compétences en développement web.
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <!-- Resume Section -->    
+        <section id="resume">
+            <h2>Mon CV</h2>
+            <table border="2">
+                <tr>
+                    <th>Nom du poste</th>
+                    <th>Entreprise</th>
+                    <th>Durée</th>
+                </tr>
+                <tr>
+                    <td>Agent d'assurance</td>
+                    <td>Ciar / Macirvie (AGA)</td>
+                    <td>2 ans</td>
+                </tr>
+                <tr>
+                    <td>Agent de voyage</td>
+                    <td>Cesar travels</td>
+                    <td>3 ans</td>
+                </tr>
+                <tr>
+                    <td>Cadre technique sinistre</td>
+                    <td>Macirvie SPA</td>
+                    <td>8 ans (en cours)</td>
+                </tr>
+            </table>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about">
+            <h2>À propos</h2>
+            <div>
+                <p><strong>Développeur web, explorateur de solutions et amateur de bons défis.</strong></p>
+                <p>Mon parcours ne suit pas une ligne droite : après avoir évolué dans le <strong>tourisme</strong>, où j’ai appris à anticiper les attentes des clients, et dans <strong>l’assurance</strong>, où la précision est clé, j’ai découvert une nouvelle passion : <strong>le développement web</strong>.</p>
+                <p>Aujourd’hui, j’allie <strong>rigueur et créativité</strong> pour concevoir des applications intuitives et performantes. J’aime particulièrement <strong>résoudre des problèmes</strong>, optimiser des workflows et automatiser des tâches pour rendre la vie plus simple.</p>
+                <p>Toujours curieux, toujours en apprentissage, je cherche sans cesse à <strong>repousser mes limites</strong>.</p>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="nom">Nom : <span style="color: red;">*</span></label><br>
+                <input type="text" id="nom" name="nom" required /><br /><br />
+          
+                <label for="email">Email :<span style="color: red;">*</span></label><br>
+                <input type="email" id="email" name="email" required /><br /><br />
+          
+                <label for="message">Message :<span style="color: red;">*</span></label><br />
+                <textarea id="message" name="message" rows="8" cols="60"></textarea><br /><br />
+          
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+        
+        <!-- Footer Section -->
+    </div>
+
+    <footer>
+        <p>&copy; 2025 BAHI Ryad</p>
+        <p>
+            <a href="https://github.com/ryadbahi" target="_blank">
+                <img src="assets/github-logo.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img src="assets/174857.png" alt="">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
