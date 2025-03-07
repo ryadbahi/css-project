@@ -1,84 +1,166 @@
 /* General Styles */
+/* Styling for the body element */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif; /* Sets the font family for the entire document */
+    margin: 0; /* Removes default margin */
+    background-color: #e6e5e5; /* Sets a light grey background color */
+    color: #333; /* Sets the text color to dark grey */
 }
 
 /* Navigation Styles */
-nav {
-    background: #333;
-    padding: 10px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Styling for the navigation bar container */
+.nav {
+    background: linear-gradient(45deg, #ff6b6b, #f06595); /* Sets a gradient background */
+    padding: 15px; /* Adds padding inside the nav container */
+    text-align: center; /* Centers the text inside the nav container */
+    position: sticky; /* Makes the nav bar stick to the top of the page */
+    top: 0; /* Positions the nav bar at the top */
+    z-index: 1000; /* Ensures the nav bar is above other elements */
+    width: 50%; /* Sets the width of the nav bar */
+    margin: 20px auto; /* Centers the nav bar horizontally */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges items in a column */
+    align-content: center; /* Centers the content */
+    align-items: center; /* Centers the items */
+    border-radius: 8px; /* Rounds the corners of the nav bar */
 }
 
+/* Styling for the navigation links */
 nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
+    color: white; /* Sets the text color to white */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px 20px; /* Adds padding inside the links */
+    font-weight: bold; /* Makes the text bold */
+    transition: background 0.3s; /* Adds a transition effect for the background */
+}
+
+/* Hover effect for the navigation links */
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Changes background color on hover */
+    border-radius: 5px; /* Rounds the corners of the background */
 }
 
 /* Content Styles */
+/* Styling for the content container */
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5vh;
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges items in a column */
+    align-content: center; /* Centers the content */
+    align-items: center; /* Centers the items */
+    padding-top: 5vh; /* Adds padding at the top */
 }
 
+/* Styling for the iframe element */
 iframe {
-    width: 560px;
-    height: 315px;
+    width: 80%; /* Sets the width to 80% of the parent */
+    max-width: 800px; /* Sets a maximum width */
+    height: 450px; /* Sets the height */
+    border: none; /* Removes the border */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
 }
 
+/* Styling for the section elements */
 section {
-    padding: 20px;
+    padding: 40px 20px; /* Adds padding inside the sections */
+    width: 80%; /* Sets the width to 80% of the parent */
+    max-width: 800px; /* Sets a maximum width */
+    background: white; /* Sets the background color to white */
+    margin: 20px 0; /* Adds margin above and below the sections */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
 }
 
+/* Styling for the section headings */
+section h1, section h2 {
+    color: #ff6b6b; /* Sets the text color to a shade of red */
+}
+
+/* Styling for the div elements inside the content container */
 .content div {
-    width: 565px;
-    line-height: 20px;
+    width: 100%; /* Sets the width to 100% of the parent */
+    line-height: 1.6; /* Sets the line height */
+    display: contents; /* Makes the div act as its children */
 }
 
 /* Table Styles */
+/* Styling for the table elements */
 table {
-    width: 565px;
-    line-height: 20px;
+    width: 100%; /* Sets the width to 100% of the parent */
+    border-collapse: collapse; /* Collapses the table borders */
+    margin: 20px 0; /* Adds margin above and below the tables */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+    border-radius: 10px; /* Rounds the corners */
+    overflow: hidden; /* Ensures the border-radius is applied to the table */
+    border: hidden; /* Hides the table border */
 }
 
+/* Styling for the table header and data cells */
+th, td {
+    padding: 15px; /* Adds padding inside the cells */
+    text-align: left; /* Aligns the text to the left */
+    border-bottom: 1px solid #ddd; /* Adds a bottom border to the cells */
+}
+
+/* Styling for the table header cells */
 th {
-    vertical-align: middle;
-    text-align: center;
+    background: #ff6b6b; /* Sets the background color to a shade of red */
+    color: white; /* Sets the text color to white */
 }
 
+/* Hover effect for the table rows */
+tr:hover {
+    background: #f1f1f1; /* Changes background color on hover */
+}
+
+/* Styling for the images inside the table cells */
 th img, td img {
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
-    vertical-align: middle;
+    width: 50px; /* Sets the width of the images */
+    height: 50px; /* Sets the height of the images */
+    margin: 0 10px; /* Adds margin to the left and right of the images */
+    vertical-align: middle; /* Aligns the images vertically in the middle */
 }
 
 /* Footer Styles */
+/* Styling for the footer element */
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: linear-gradient(45deg, #ff6b6b, #f06595); /* Sets a gradient background */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Adds padding inside the footer */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: row; /* Arranges items in a row */
+    align-content: center; /* Centers the content */
+    align-items: center; /* Centers the items */
+    border-radius: 8px; /* Rounds the corners of the footer */
+    justify-content: space-between; /* Distributes space between items */
+    width: 90%; /* Sets the width to 90% of the parent */
+    height: 25px;
+    margin: 0 auto 20px auto; /* Centers the footer horizontally */
 }
 
+/* Styling for the paragraphs inside the footer */
 footer p {
-    flex: 1;
-    text-align: center;
-    margin: 0;
+    flex: 1; /* Allows the paragraph to grow and shrink */
+    text-align: center; /* Aligns the "text and icons" to the center */
+    margin: 0; /* Removes default margin */
 }
 
+footer a {
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* Styling for the images inside the footer links */
 footer a img {
-    height: 45px;
-    width: 45px;
+    height: 45px; /* Sets the height of the images */
+    width: 45px; /* Sets the width of the images */
+    margin: 0; /* Adds margin to the left and right of the images */
+    transition: transform 0.3s; /* Adds a transition effect for the transform property */
+    
+    
+}
+
+/* Hover effect for the images inside the footer links */
+footer a img:hover {
+    transform: scale(1.1); /* Scales the images up on hover */
 }
